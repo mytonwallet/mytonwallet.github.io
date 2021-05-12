@@ -24,7 +24,7 @@
   <meta name="generator" content="Hexo 5.4.0"></head>
   <body>
 
-   <script>window.__INITIAL_STATE__ = {"page":{"title":"Restore new wallet","path":"ui/restore_new_wallet.html"},"data":{"navigation":{"logo":{"text":"My TON wallet","type":"link","path":"index.html"},"main":[{"text":"Home","type":"link","path":"/"},{"text":"Installation","type":"link","path":"installation.html"},{"text":"UI","type":"label"},{"text":"First run","type":"link","path":"ui/first_run.html"},{"text":"Create the new wallet","type":"link","path":"ui/create_new_wallet.html"},{"text":"Backup wallet","type":"link","path":"ui/backup_wallet.html"},{"text":"Restore wallet","type":"link","path":"ui/restore_wallet.html"},{"text":"Send transaction","type":"link","path":"ui/send_transaction.html"},{"text":"Settings","type":"link","path":"ui/settings.html"},{"text":"SUPPORT AND FEEDBACK","type":"label"},{"text":"Send a message to us","type":"link","path":"https://docs.google.com/forms/d/e/1FAIpQLSeDZwc8cvMKhjQc2PzTiqNCJ31oAqvhzbO6IEWBv1CBu2b3LA/viewform"},{"text":"Raise an issue on Github","type":"link","path":"https://github.com/mytonwallet/web-extension/issues/new"},{"text":"Privacy policy","type":"link","path":"privacy.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"hexo-theme-doc","theme_config":{"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"Restore new wallet","path":"ui/restore_new_wallet.html"},"data":{"navigation":{"logo":{"text":"My TON wallet","type":"link","path":"index.html"},"main":[{"text":"Home","type":"link","path":"/"},{"text":"Installation","type":"link","path":"installation.html"},{"text":"UI","type":"label"},{"text":"First run","type":"link","path":"ui/first_run.html"},{"text":"Create a new wallet","type":"link","path":"ui/create_new_wallet.html"},{"text":"Restore a new wallet","type":"link","path":"ui/restore_new_wallet.html"},{"text":"Backup","type":"label"},{"text":"Backup wallet","type":"link","path":"ui/backup_wallet.html"},{"text":"Backup as keystore","type":"link","path":"ui/backup/backup_wallet_keystore.html"},{"text":"Backup as keys","type":"link","path":"ui/backup/backup_wallet_keys.html"},{"text":"Restore","type":"label"},{"text":"Restore wallet","type":"link","path":"ui/restore_wallet.html"},{"text":"Restore wallet from keystore","type":"link","path":"ui/restore/restore_wallet_keystore.html"},{"text":"Restore wallet from keys (legacy)","type":"link","path":"ui/restore/restore_wallet_keys.html"},{"text":"Restore wallet from seed phrase (legacy)","type":"link","path":"ui/restore/restore_wallet_seed.html"},{"text":"Send a transaction","type":"link","path":"ui/send_transaction.html"},{"text":"Settings","type":"link","path":"ui/settings.html"},{"text":"SUPPORT AND FEEDBACK","type":"label"},{"text":"Send a message to us","type":"link","path":"https://docs.google.com/forms/d/e/1FAIpQLSeDZwc8cvMKhjQc2PzTiqNCJ31oAqvhzbO6IEWBv1CBu2b3LA/viewform"},{"text":"Raise an issue on Github","type":"link","path":"https://github.com/mytonwallet/web-extension/issues/new"},{"text":"Privacy policy","type":"link","path":"privacy.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"hexo-theme-doc","theme_config":{"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
 
     <div id="react-navigation-root"><div class="doc-navigation" data-reactroot=""><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"/><span class="doc-navbar__logo__text">My TON wallet</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
     <div class="doc-content">
@@ -32,8 +32,70 @@
     <div class="dc-card">
       <div id="react-search-results-root"></div>
       <div id="page-content" class="doc-formatting">
-        <h1 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h1><p>Will be updated asap</p>
+        <h1 id="Restore-a-new-wallet"><a href="#Restore-a-new-wallet" class="headerlink" title="Restore a new wallet"></a>Restore a new wallet</h1><p>This flow allows restoring the first account in your wallet from keystore. This flow contains from several steps:</p>
+<ol>
+<li>Password creating</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_2.png">
 
+<ol start="2">
+<li>Password checking</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_3.png">
+
+<ol start="2">
+<li>Upload your keystore</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_4.png">
+
+<ol start="3">
+<li>Confirm keystore</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_5.png">
+
+<ol start="4">
+<li>Decrypt keystore by password. The hint can be useful.</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_6.png">
+
+<ol start="5">
+<li>Confirm your password</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_7.png">
+
+<ol start="6">
+<li>Review accounts and tick that you want to restore</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_8.png">
+
+<ol start="7">
+<li>You will see which accounts are restored or already existed</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_9.png">
+
+<ol start="8">
+<li>Done</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_10.png">
+
+<ol start="9">
+<li>Your wallet is restored and ready for using</li>
+</ol>
+<img src="/images/first_run_restore/first_run_restore_11.png">
+
+        <!-- 
+    <div class="current-language-item">(en)</div>
+    
+        <a href="/ui/restore_new_wallet.html" class="language-item">
+            en
+        </a>
+    
+        <a href="/ru/ui/restore_new_wallet.html" class="language-item">
+            ru
+        </a>
+    
+
+ -->
         <div id="react-support-footer-root"></div>
       </div>
     </div>
@@ -51,6 +113,8 @@
 
     <!-- js source  -->
     <script src="/script/doc.js"></script>
+    <script src="/script/lunr.stemmer.support.min.js"></script>
+    <script src="/script/lunr.ru.min.js"></script>
 
     
 
